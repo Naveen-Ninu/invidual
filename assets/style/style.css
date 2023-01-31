@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    background: black;
+}
+
+/* FONT-FAMILY */
+
+.ff-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.ff-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FONT SIZES  */
+:root {
+    --font-xs: 12px;
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 20px;
+    --font-xl: 22px;
+    --font-2xl: 40px;
+    --font-3xl: 48px;
+    /* COLORS */
+    --white: #ffffff;
+
+}
+
+/* ----------------------------------- ONLY-MEDIA-QUERIES ----------------------------------- */
+@media (max-width: 1399.98px) {
+    :root {
+        --font-xs: 12px;
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 20px;
+        --font-xl: 22px;
+        --font-2xl: 40px;
+        --font-3xl: 48px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    :root {
+        --font-xs: 12px;
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 20px;
+        --font-xl: 22px;
+        --font-2xl: 40px;
+        --font-3xl: 48px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    :root {
+        --font-xs: 12px;
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 20px;
+        --font-xl: 22px;
+        --font-2xl: 40px;
+        --font-3xl: 48px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --font-xs: 12px;
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 20px;
+        --font-xl: 22px;
+        --font-2xl: 40px;
+        --font-3xl: 48px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --font-xs: 12px;
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 18px;
+        --font-xl: 22px;
+        --font-2xl: 32px;
+        --font-3xl: 38px;
+    }
+}
+
+.white {
+    color: var(--white);
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+/* FONTS */
+.fs_xs {
+    font-size: var(--font-xs);
+}
+
+.fs_sm {
+    font-size: var(--font-sm);
+}
+
+.fs_md {
+    font-size: var(--font-md);
+}
+
+.fs_lg {
+    font-size: var(--font-lg);
+}
+
+.fs_xl {
+    font-size: var(--font-xl);
+}
+
+.fs_2xl {
+    font-size: var(--font-2xl);
+}
+
+.fs_3xl {
+    font-size: var(--font-3xl);
+}
+
+.heading {
+    font-size: var(--font-2xl);
+    font-weight: 900;
+    color: var(--offwhite);
+}
+
+.main_heading {
+    font-weight: 900;
+    font-size: var(--font-3xl);
+    color: var(--white);
+}
+
+.para {
+    color: var(--white);
+    font-size: var(--font-xs);
+    font-weight: 400;
+}
+
+.blue_lenear_heading {
+    background: linear-gradient(101.96deg, #00BFFF 0%, #0085FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.opacity_03 {
+    opacity: 0.3;
+}
+
+.opacity_07 {
+    opacity: 0.7;
+}
+
+.opacity_05 {
+    opacity: 0.5;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.icon-hover {
+    transition: all 300ms ease-in-out;
+}
+
+.icon-hover:hover {
+
+    transform: translateY(-6px);
+}
+
+.z_index_min_1 {
+    z-index: -1;
+}
+
+.z_index_5 {
+    z-index: 5 !important;
+}
+
+.z_index_10 {
+    z-index: 10 !important;
+}
+
+/* ------------------------------------HERO-CSS-STARTS-------------------------------------*/
+.hero_bg {
+    background-image: url("/assets/images/png/hero_bg_img.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.icons_width {
+    height: 57px;
+    width: 57px;
+}
+
+.hero_slider_card_one {
+    background-image: url("/assets/images/png/hero_slider_with_text.png");
+    background-size: 100% 100%;
+    max-width: 751px;
+    height: 404px;
+    border-radius: 15px;
+}
+
+/* ------------------------------------WHO-WE-ARE-CSS-STARTS-------------------------------------*/
+.we_are_bg {
+    background-image: url("/assets/images/png/we_are_bg_img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* ------------------------------------OUR-FEATURES-CSS-STARTS-------------------------------------*/
+.our_card_bg {
+    background: linear-gradient(90.18deg, #0E141D 0%, #101822 100%);
+    box-shadow: -24px -6px 80px #000000, 0px 2.23431px 3.35146px rgba(0, 0, 0, 0.25), 0px 10.0544px 31.2803px rgba(0, 0, 0, 0.25), inset 0px 2.23431px 3.35146px #4C6484, inset 21.2259px 11.1715px 44.6862px #192535;
+    border-radius: 24.5774px;
+}
+
+/* ------------------------------------FOOTER-CSS-STARTS-------------------------------------*/
+.footer_links_hover:hover {
+    color: #ffffff;
+    opacity: 0.9 !important;
+}
+
+.footer_bg {
+    background-image: url("/assets/images/png/footer_bg__img.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* height: 100vh; */
+}
+
+a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* ------------------PRELOADER-CSS--------------- */
+.preloader-logo {
+    width: 100px;
+    animation: logo 2s infinite ease-in-out;
+}
+
+.preloader-class {
+    overflow-y: hidden !important;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 3000;
+    background: black;
+}
+
+/* ============================ BACK TO TOP CSS START ============================ */
+#scroll {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    display: none;
+    border-radius: 50%;
+    background: linear-gradient(101.96deg, #00BFFF 0%, #0085FF 100%);
+    border: 1.6px solid white;
+    transition: all 300ms linear !important;
+    -webkit-animation: up-down 2.5s ease-in-out infinite;
+    animation: up-down 2.5s ease-in-out infinite;
+    z-index: 10;
+}
+
+@-webkit-keyframes up-down {
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: white;
+}
+
+#scroll:hover {
+    -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+}
+
+#scroll:hover::after {
+    height: 100%;
+}
+
+/*------------------------------------- SCROLLBAR-Y-CUSTOMISE-CSS-START ------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(101.96deg, #00BFFF 0%, #0085FF 100%);
+    border-radius: 10px;
+}
+
+/* MIDEAYUERY-START */
+@media (max-width: 1398.99px) {}
+
+@media (max-width:1198.99px) {}
+
+@media (max-width:1023.99px) {}
+
+@media (max-width: 767.99px) {}
+
+@media (max-width:577px) {}
