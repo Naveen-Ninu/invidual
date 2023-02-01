@@ -1,5 +1,5 @@
 $(".autoplay").slick({
-  autoplay: true,
+  // autoplay: true,
   centerMode: true,
   centerPadding: "110px",
   autoplaySpeed: 2500,
@@ -30,13 +30,23 @@ $(".vertical_slider").slick({
   slidesToShow: 1,
   slidesToScroll: 3,
   centerMode: true,
-  centerPadding: "120px",
+  centerPadding: "110px",
   autoplay: true,
   arrows: false,
   autoplaySpeed: 2500,
   vertical: true,
   verticalswaping: true,
   asNavFor: ".vertical_image_slider",
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        centerPadding: "80px",
+        // slidesToShow: 3,
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 $(".vertical_image_slider").slick({
   slidesToShow: 1,

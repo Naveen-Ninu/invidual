@@ -65,8 +65,8 @@ body {
         --font-md: 18px;
         --font-lg: 20px;
         --font-xl: 22px;
-        --font-2xl: 40px;
-        --font-3xl: 48px;
+        --font-2xl: 36px;
+        --font-3xl: 42px;
     }
 }
 
@@ -178,7 +178,6 @@ body {
 }
 
 .icon-hover:hover {
-
     transform: translateY(-6px);
 }
 
@@ -246,7 +245,6 @@ body {
     background: linear-gradient(90.18deg, #0E141D 0%, #101822 100%);
     box-shadow: -24px -6px 80px #000000, 0px 2.23431px 3.35146px rgba(0, 0, 0, 0.25), 0px 10.0544px 31.2803px rgba(0, 0, 0, 0.25), inset 0px 2.23431px 3.35146px #4C6484, inset 21.2259px 11.1715px 44.6862px #192535;
     border-radius: 24.5774px;
-
     opacity: 0.5;
 }
 
@@ -259,10 +257,10 @@ body {
 }
 
 .vertical_slider .slick-active {
-    margin-left: 50px !important;
+    margin-left: 40px !important;
     z-index: 2 !important;
-    max-width: 534px !important;
-    position: relative;
+    /* max-width: 534px !important; */
+    /* position: relative; */
     opacity: 0.9;
 }
 
