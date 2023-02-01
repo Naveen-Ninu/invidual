@@ -27,7 +27,8 @@
     <!-- bootstrap-link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-
+    <!-- aos animation css link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- slick-theme.min.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
@@ -47,15 +48,15 @@
 <body>
     <!--HEADER-START -->
     <!-- -----------------------------------------PRELOADER------------------------------------------ -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="d-flex flex-column align-items-center">
             <img class="preloader-logo pb-2 w-100" src="./assets/images/svg/footer_logo.svg" alt="preloader" />
         </div>
-    </div>
+    </div> -->
 
     <header class="hero_bg">
-        <main class=" main-top-section main_top_bg position-relative z-index-10 d-flex flex-column">
-            <nav class="navbar-wrapper d-flex">
+        <div class=" main-top-section main_top_bg position-relative z-index-10 d-flex flex-column pt-2">
+            <nav class="navbar-wrapper d-flex mt-xl-4">
                 <div id="overlay">
                     <div class="container custom_container d-flex align-items-center justify-content-center h-100">
                         <div class="row">
@@ -80,31 +81,35 @@
                                             <a class="fw-normal fs_sm ff-inter mx-1 nav_hover"
                                                 href="#aboutus">Schedule</a>
                                         </li>
-                                        <button class="border-0 nav_btn">
-                                            <a class="navbar_btn bg-white fw-bold font-md contact_link" href="/">
-                                                Login</a>
-                                        </button>
+                                        <li>
+                                            <a class="d-md-none" href="#">Login</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container custom_container d-flex d-md-block justify-content-between align-items-center">
+                <div
+                    class="container custom_container d-flex d-md-block justify-content-between align-items-center position-relative">
+                    <a href="/" class="position-absolute  lg_nav_logo_overflow d-none d-xl-block">
+                        <img src="./assets/images/svg/nav_icon.svg" alt="logo" class="lg_nav_logo_overflw_img" />
+                    </a>
                     <div
-                        class="nav-quantum position-relative py-4 py-lg-3 d-flex justify-content-between justify-content-lg-start align-items-center">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="logo-border position-relative d-none d-sm-block me-lg-5">
-                                <a href="/">
-                                    <img src="./assets/images/svg/nav_icon.svg" alt="logo" class="lg_nav_logo" />
+                        class=" ps-xl-5  ms-xl-5 mt-3 nav_bg_shadow position-relative d-flex justify-content-between align-items-center">
+
+                        <div class=" ps-lg-4 d-flex align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="logo-border position-relative d-none d-sm-block d-xl-none me-md-5">
+                                    <a href="/" class="">
+                                        <img src="./assets/images/svg/nav_icon.svg" alt="logo" class="lg_nav_logo" />
+                                    </a>
+                                </div>
+                                <a href="/" class="d-sm-none">
+                                    <img class="nav_logo" src="./assets/images/svg/nav_icon.svg" alt="logo" />
                                 </a>
                             </div>
-                            <a href="/" class="d-sm-none">
-                                <img class="nav_logo" src="./assets/images/svg/nav_icon.svg" alt="logo" />
-                            </a>
-                        </div>
-                        <div class="d-flex justifycontent-between">
-                            <div class="d-none d-md-flex justify-content-between link_m_t">
+                            <div class="d-none d-md-flex justify-content-between link_m_t ">
                                 <ul
                                     class="nav-items-list list-unstyled align-items-center d-flex gap-4 me-4 me-lg-5 pe-2 mb-0">
                                     <li>
@@ -122,14 +127,10 @@
                                     <li>
                                         <a class="fw-normal fs_sm ff-inter mx-1 nav_hover" href="#aboutus">Schedule</a>
                                     </li>
-
                                 </ul>
-                                <button class="border-0 d-none d-lg-block nav_btn position-absolute end-0 lg_nav_btn">
-                                    <a class="  white fw-normal fs_sm ff-inter" href="/">Login
-                                    </a>
-                                </button>
                             </div>
                         </div>
+                        <a class="d-none d-md-flex pb-1 nav_hover" href="#">Login</a>
                     </div>
                     <!-- Toggle Button nav -->
                     <div class="d-flex d-md-none align-items-center nav_toggle toggle-btn">
@@ -141,102 +142,222 @@
                     </div>
                 </div>
             </nav>
-        </main>
-
+        </div>
         <!-- -------------------------HERO-SECTION-START-------------------------- -->
-        <section id="home" class="">
+        <section id="home">
             <div class="container custom_container">
                 <div class="row justify-content-center text-center">
-                    <div class="col-md-7">
-                        <div class="">
-                            <h2 class="white fs_3xl fw_500 ff-poppins pb-1 mt-4">WELCOME TO<span
+                    <div class="col-xl-7">
+                        <div>
+                            <h2 class="white fs_3xl fw_500 ff-poppins pb-1 mt-5 pt-2">WELCOME TO<span
                                     class="blue_lenear_heading fw-bold"> SCRAPLAND</h2>
                             </span>
-                            <p class="white fs_sm fw-normal ff-poppins">Check out our gamemodes and servers below</p>
+                            <p class="white fs_sm fw-normal ff-poppins mb-3">Check out our gamemodes and servers
+                                below
+                            </p>
                             <ul
-                                class="text-decoration-none align-items-center d-flex flex-row justify-content-center flex-wrap pt-1 ps-0">
+                                class="text-decoration-none align-items-center d-flex flex-row justify-content-center flex-wrap pt-2 mt-1 mb-1 ps-0">
                                 <li class="d-flex flex-column">
                                     <a href="https://www.amazon.in/"><img src="./assets/images/svg/shop_icon_hero.svg"
-                                            alt="" class="icons_width icon-hover"></a>
+                                            alt="#" class="icons_width icon-hover"></a>
                                     <a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                        href="">STORE</a>
+                                        href="#">STORE</a>
                                 </li>
                                 <li class="d-flex flex-column px-2 mx-1">
-                                    <img src="./assets/images/svg/link_icon_hero.svg" alt=""
-                                        class="icons_width icon-hover">
+                                    <a href="https://www.amazon.in/"><img src="./assets/images/svg/link_icon_hero.svg"
+                                            alt="#" class="icons_width icon-hover"></a>
+
                                     <a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                        href="">LINK</a>
+                                        href="#">LINK</a>
                                 </li>
                                 <li class="d-flex flex-column">
                                     <a href="https://discord.com/channels/@me">
-                                        <img src="./assets/images/svg/discord_icon_hero.svg" alt=""
+                                        <img src="./assets/images/svg/discord_icon_hero.svg" alt="#"
                                             class="icons_width icon-hover">
 
                                     </a>
                                     <a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                        href="">DISCORD</a>
+                                        href="https://discord.com/channels/@me">DISCORD</a>
                                 </li>
                                 <li class="d-flex flex-column px-2 mx-1">
                                     <a href="https://twitter.com/home?lang=en">
-                                        <img src="./assets/images/svg/twitter_icon_hero.svg" alt=""
+                                        <img src="./assets/images/svg/twitter_icon_hero.svg" alt="#"
                                             class="icons_width icon-hover">
 
                                     </a>
                                     <a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                        href="">TWITTER</a>
+                                        href="#">TWITTER</a>
                                 </li>
                                 <li class="d-flex flex-column">
-                                    <img src="./assets/images/svg/steam_icon_hero.svg" alt=""
-                                        class="icons_width icon-hover">
+                                    <a href="#"><img src="./assets/images/svg/steam_icon_hero.svg" alt="#"
+                                            class="icons_width icon-hover"></a>
                                     <a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                        href="">STEAM</a>
+                                        href="#">STEAM</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="autoplay py-5">
-                <div class="hero_slider_card_one mx-2">
+            <div class="autoplay m-auto py-5">
+                <div class="m-auto hero_slider_card position-relative z_index_5 mx-2">
+                    <img src="./assets/images/png/hero_slider_one_img.png" alt="#" class="w-100 hero_slider_one_img">
+                    <div
+                        class="d-flex justify-content-between hero_card_cuntant align-items-center position-absolute bottom-0 px-1">
+                        <div class="d-sm-flex">
+                            <div class="pe-1">
+                                <img src="./assets/images/svg/blue_dots_365.svg"
+                                    class="w-100 m-auto m-lg-0 pb-3 blue_dots_365" alt="#">
+                            </div>
+                            <div class="text-white fs_lg ff-poppins">
+                                <p class="fs_lg m-0">345</p>
+                                <div class="white fs_xs opacity_05">PLAYERS ACTIVE</div>
+                            </div>
+
+                        </div>
+                        <div class="ps-1">
+                            <p class="white fs_xs fw-normal ff-poppins hero_card_para opacity_07">Dignissim vitae
+                                integer odio
+                                posuere gravida sed
+                                dolor
+                                purus id. Sed
+                                ipsum
+                                et amet etiam
+                                interdum amet aenean gravida.</p>
+                        </div>
+                        <div class="d-sm-flex justify-content-center m-auto m-lg-0">
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_amazon_icon.svg"
+                                    alt="hero_slider_amazon_icon" class="m-auto"></a>
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_discord_icon.svg"
+                                    alt="hero_slider_discord_icon" class="m-auto"></a>
+                            <a href="#"><img src="./assets/images/svg/hero_card_server_btn.svg" class="m-auto"
+                                    alt="#"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero_slider_card_one mx-2">
+                <div class="m-auto hero_slider_card position-relative z_index_5 mx-2">
+                    <img src="./assets/images/png/hero_slider_one_img.png" alt="#" class="w-100 hero_slider_one_img">
+                    <div
+                        class="d-flex justify-content-between hero_card_cuntant align-items-center position-absolute bottom-0 px-1">
+                        <div class="d-sm-flex">
+                            <div class="pe-1">
+                                <img src="./assets/images/svg/blue_dots_365.svg"
+                                    class="w-100 m-auto m-lg-0 pb-3 blue_dots_365" alt="#">
+                            </div>
+                            <div class="text-white fs_lg ff-poppins">
+                                <p class="fs_lg m-0">345</p>
+                                <div class="white fs_xs opacity_05">PLAYERS ACTIVE</div>
+                            </div>
+
+                        </div>
+                        <div class="ps-1">
+                            <p class="white fs_xs fw-normal ff-poppins hero_card_para opacity_07">Dignissim vitae
+                                integer odio
+                                posuere gravida sed
+                                dolor
+                                purus id. Sed
+                                ipsum
+                                et amet etiam
+                                interdum amet aenean gravida.</p>
+                        </div>
+                        <div class="d-sm-flex justify-content-center m-auto m-lg-0">
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_amazon_icon.svg"
+                                    alt="hero_slider_amazon_icon" class="m-auto"></a>
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_discord_icon.svg"
+                                    alt="hero_slider_discord_icon" class="m-auto"></a>
+                            <a href="#"><img src="./assets/images/svg/hero_card_server_btn.svg" class="m-auto"
+                                    alt="#"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero_slider_card_one mx-2">
+                <div class="m-auto hero_slider_card position-relative z_index_5 mx-2">
+                    <img src="./assets/images/png/hero_slider_one_img.png" alt="#" class="w-100 hero_slider_one_img">
+                    <div
+                        class="d-flex justify-content-between hero_card_cuntant align-items-center position-absolute bottom-0 px-1">
+                        <div class="d-sm-flex">
+                            <div class="pe-1">
+                                <img src="./assets/images/svg/blue_dots_365.svg"
+                                    class="w-100 m-auto m-lg-0 pb-3 blue_dots_365" alt="#">
+                            </div>
+                            <div class="text-white fs_lg ff-poppins">
+                                <p class="fs_lg m-0">345</p>
+                                <div class="white fs_xs opacity_05">PLAYERS ACTIVE</div>
+                            </div>
+
+                        </div>
+                        <div class="ps-1">
+                            <p class="white fs_xs fw-normal ff-poppins hero_card_para opacity_07">Dignissim vitae
+                                integer odio
+                                posuere gravida sed
+                                dolor
+                                purus id. Sed
+                                ipsum
+                                et amet etiam
+                                interdum amet aenean gravida.</p>
+                        </div>
+                        <div class="d-sm-flex justify-content-center m-auto m-lg-0">
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_amazon_icon.svg"
+                                    alt="hero_slider_amazon_icon" class="m-auto"></a>
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_discord_icon.svg"
+                                    alt="hero_slider_discord_icon" class="m-auto"></a>
+                            <a href="#"><img src="./assets/images/svg/hero_card_server_btn.svg" class="m-auto"
+                                    alt="#"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
-                </div>
-                <div class="hero_slider_card_one mx-2">
+                <div class="m-auto hero_slider_card position-relative z_index_5 mx-2">
+                    <img src="./assets/images/png/hero_slider_one_img.png" alt="#" class="w-100 hero_slider_one_img">
+                    <div
+                        class="d-flex justify-content-between hero_card_cuntant align-items-center position-absolute bottom-0 px-1">
+                        <div class="d-sm-flex">
+                            <div class="pe-1">
+                                <img src="./assets/images/svg/blue_dots_365.svg"
+                                    class="w-100 m-auto m-lg-0 pb-3 blue_dots_365" alt="#">
+                            </div>
+                            <div class="text-white fs_lg ff-poppins">
+                                <p class="fs_lg m-0">345</p>
+                                <div class="white fs_xs opacity_05">PLAYERS ACTIVE</div>
+                            </div>
+
+                        </div>
+                        <div class="ps-1">
+                            <p class="white fs_xs fw-normal ff-poppins hero_card_para opacity_07">Dignissim vitae
+                                integer odio
+                                posuere gravida sed
+                                dolor
+                                purus id. Sed
+                                ipsum
+                                et amet etiam
+                                interdum amet aenean gravida.</p>
+                        </div>
+                        <div class="d-sm-flex justify-content-center m-auto m-lg-0">
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_amazon_icon.svg"
+                                    alt="hero_slider_amazon_icon" class="m-auto"></a>
+                            <a href="#"> <img src="/assets/images/svg/hero_slider_discord_icon.svg"
+                                    alt="hero_slider_discord_icon" class="m-auto"></a>
+                            <a href="#"><img src="./assets/images/svg/hero_card_server_btn.svg" class="m-auto"
+                                    alt="#"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </header>
     <main>
         <!-------------------------------------- WHO WE ARE? SECTION-START -------------------------->
-        <section class="we_are_bg bg-black pb-lg-5">
-            <div class="container py-5">
+        <section class="we_are_bg bg-black">
+            <div class="container py-xl-5">
                 <div class="row justify-content-center text-center">
-                    <div class="col-md-10 col-lg-7">
-                        <div class="">
-                            <img src="./assets/images/png/we_are_top_line.png" alt="" class="w-100">
-                            <h2 class="white fs_2xl fw_500 ff-poppins pb-1 mt-4" data-aos="fade-down"
+                    <div class="col-md-10 col-xl-7">
+                        <div>
+                            <img src="./assets/images/png/we_are_top_line.png" alt="#" class="w-100">
+                            <h2 data-aos="fade-down" data-aos-duration="1200"
+                                class="white fs_2xl fw_500 ff-poppins pb-3 mt-4" data-aos="fade-down"
                                 data-aos-duration="1500"><span class="blue_lenear_heading">WHO</span>
                                 WE
                                 ARE?</h2>
-                            <p class="white fs_lg fw_500 ff-poppins">Tincidunt laoreet integer ut aenean rhoncus.
+                            <p data-aos="zoom-in" data-aos-duration="1200" class="white fs_lg fw_500 ff-poppins">
+                                Tincidunt laoreet integer ut aenean rhoncus.
                                 Pulvinar erat vitae facilisis
                                 facilisi ut massa nec interdum laoreet. Morbi
                                 tristique dictum facilisis pharetra egestas sit et. Velit nunc sapien mauris integer.
@@ -249,34 +370,86 @@
         </section>
         <!-------------------------------------- OUR FEATURES! SECTION-START -------------------------->
         <section>
-            <div class="container py-5">
-                <h2 class="white fs_2xl fw_500 ff-poppins pb-5 mt-4 text-center">OUR <span
+            <div class="container py-xl-5">
+                <h2 data-aos="fade-down" data-aos-duration="1200"
+                    class="white fs_2xl fw_500 ff-poppins pb-5 mt-4 text-center">OUR <span
                         class="blue_lenear_heading fw-semibold">FEATURES!</span>
                 </h2>
                 <div class="row">
-                    <div class="col-lg-6 m-auto">
-                        <div class="our_card_bg p-4">
-                            <h3 class="white ff-inter fs_xl fw-semibold ">REVIEW YOUR STATS!</h3>
-                            <p class="white fs_md fw_500 ff-poppins opacity-50">Tincidunt laoreet integer ut aenean
-                                rhoncus.</p>
+                    <div data-aos="fade-right" data-aos-duration="1200" class="col-lg-6 m-auto order-2 order-lg-1">
+                        <div class="vertical_slider">
+                            <div class="our_card_bg p-3 p-md-4">
+                                <h3 class="white ff-inter fs_xl fw-semibold ">PLAY TO EARN</h3>
+                                <p class="white fs_md fw_500 ff-poppins opacity-50 mb-0">Tincidunt laoreet integer ut
+                                    aenean
+                                    rhoncus.</p>
+                            </div>
+                            <div class="our_card_bg p-3 p-md-4">
+                                <h3 class="white ff-inter fs_xl fw-semibold ">REVIEW YOUR STATS!</h3>
+                                <p class="white fs_md fw_500 ff-poppins opacity-50 mb-0">Tincidunt laoreet integer ut
+                                    aenean
+                                    rhoncus.</p>
+                            </div>
+                            <div class="our_card_bg p-3 p-md-4">
+                                <h3 class="white ff-inter fs_xl fw-semibold ">Trade your items!!</h3>
+                                <p class="white fs_md fw_500 ff-poppins opacity-50 mb-0">Tincidunt laoreet integer ut
+                                    aenean
+                                    rhoncus.</p>
+                            </div>
+                            <div class="our_card_bg p-3 p-md-4">
+                                <h3 class="white ff-inter fs_xl fw-semibold ">PLAY TO EARN</h3>
+                                <p class="white fs_md fw_500 ff-poppins opacity-50 mb-0">Tincidunt laoreet integer ut
+                                    aenean
+                                    rhoncus.</p>
+                            </div>
+                            <div class="our_card_bg p-3 p-md-4">
+                                <h3 class="white ff-inter fs_xl fw-semibold ">REVIEW YOUR STATS!</h3>
+                                <p class="white fs_md fw_500 ff-poppins opacity-50 mb-0">Tincidunt laoreet integer ut
+                                    aenean
+                                    rhoncus.</p>
+                            </div>
+                            <div class="our_card_bg p-3 p-md-4">
+                                <h3 class="white ff-inter fs_xl fw-semibold ">Trade your items!!</h3>
+                                <p class="white fs_md fw_500 ff-poppins opacity-50 mb-0">Tincidunt laoreet integer ut
+                                    aenean
+                                    rhoncus.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 m-auto position-relative">
-                        <img src="./assets/images/png/our_feature_imag_bg.png" class="position-absolute end-0" alt="">
-                        <div class="text-center">
-                            <img src="/assets/images/png/our_feature_traid.png" alt="w-100" class="w-75">
+                    <div data-aos="fade-left" data-aos-duration="1200"
+                        class="col-md-9 col-lg-6 m-auto position-relative z_index_5 pt-4 order-1 order-lg-2">
+                        <img src="./assets/images/png/our_feature_imag_bg.png"
+                            class="position-absolute w-100 our_feature_img_bg z_index_min_1" alt="our_feature_imag_bg">
+                        <div class="vertical_image_slider">
+                            <div class="text-center ">
+                                <img src="/assets/images/png/our_feature_traid.png" alt="w-100" class="w-100">
+                            </div>
+                            <div class="text-center ">
+                                <img src="/assets/images/png/our_feature_items.png" alt="w-100" class="w-100">
+                            </div>
+                            <div class="text-center ">
+                                <img src="/assets/images/png/our_feature_play.png" alt="w-100" class="w-100">
+                            </div>
+                            <div class="text-center ">
+                                <img src="/assets/images/png/our_feature_traid.png" alt="w-100" class="w-100">
+                            </div>
+                            <div class="text-center ">
+                                <img src="/assets/images/png/our_feature_items.png" alt="w-100" class="w-100">
+                            </div>
+                            <div class="text-center ">
+                                <img src="/assets/images/png/our_feature_play.png" alt="w-100" class="w-100">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <!----------------------------------------- FOOTER-START SECTION-START --------------------------------------- -->
     <footer class="footer_bg py-5">
-        <div class="container mt-lg-5 mb-lg-3">
-            <div class="row justify-content-center text-center pt-lg-5">
-                <div class="col-lg-7">
-                    <div>
+        <div data-aos="zoom-in" data-aos-duration="1200" class="container mt-xl-5 mb-lg-3">
+            <div class="row justify-content-center text-center pt-md-3 pt-xl-5">
+                <div class="col-xl-7">
+                    <div class="mb-3 ">
                         <img src="/assets/images/svg/footer_logo.svg" alt="footer_logo" class="cursor_pointer">
                     </div>
                     <p class="fs_sm ff-poppins fw-normal white opacity-50 p-2 px-sm-3 pt-2 pt-md-4 mt-2">Iaculis turpis
@@ -286,29 +459,28 @@
                         morbi odio nisl
                         dictumst lectus
                         elementum. Cras dictum pulvinar dolor diam pell.</p>
-
                     <ul
                         class="text-decoration-none list-unstyled d-flex flex-row justify-content-center flex-wrap pt-1">
                         <li><a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                href="">Home</a>
+                                href="#home">Home</a>
                         </li>
                         <li><a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover px-3 px-sm-4 mx-md-3"
-                                href="">LINK</a>
+                                href="#">LINK</a>
                         </li>
                         <li><a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                href="">BANS</a>
+                                href="#">BANS</a>
                         </li>
                         <li><a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover  px-3 px-sm-4 mx-md-3"
-                                href="">Leaderboard</a>
+                                href="#">Leaderboard</a>
                         </li>
                         <li><a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover"
-                                href="">ABOUT</a>
+                                href="#">ABOUT</a>
                         </li>
                         <li><a class="text-decoration-none fs_sm ff-poppins fw-normal white opacity-50 footer_links_hover px-3 px-sm-4 mx-md-3"
-                                href="">APPLICATIONS</a>
+                                href="#">APPLICATIONS</a>
                         </li>
                     </ul>
-                    <div class="">
+                    <div>
                         <a href="https://discord.com/channels/@me">
                             <img src="./assets/images/svg/footer_discord_icon.svg" alt="footer_discord_icon"
                                 class="icon-hover">

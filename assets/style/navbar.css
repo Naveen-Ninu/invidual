@@ -40,6 +40,16 @@
     background: transparent;
     z-index: 10;
     position: relative;
+    background: linear-gradient(270deg, rgba(9, 12, 16, 0.12) 4.72%, rgba(9, 12, 16, 0.94) 12.5%, #090C10 90.54%, rgba(9, 12, 16, 0.23) 95.21%);
+}
+
+.lg_nav_logo_overflow {
+    top: -18%;
+
+}
+
+.lg_nav_logo_overflw_img {
+    width: 110%;
 }
 
 /* NAVBAR-HOVER */
@@ -196,6 +206,7 @@ a {
 
 .navbar-wrapper .hamburger-menu.animate span {
     background-color: white;
+
 }
 
 .overlay-btns button:hover {
@@ -203,7 +214,8 @@ a {
 }
 
 .link_m_t {
-    margin-top: -12px;
+    /* margin-top: -12px; */
+    padding: 24px 0px;
 }
 
 @media (max-width: 1199.98px) {
@@ -336,7 +348,7 @@ a {
         height: 100%;
         pointer-events: none;
         height: 100vh;
-        background: linear-gradient(101.96deg, #00BFFF 0%, #0085FF 100%);
+        background-color: #090C10;
     }
 }
 
@@ -376,7 +388,7 @@ a {
     }
 
     .nav_logo {
-        max-width: 70px;
+        max-width: 50px;
     }
 
     .mobile_icons img {

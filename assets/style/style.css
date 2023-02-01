@@ -86,9 +86,9 @@ body {
     :root {
         --font-xs: 12px;
         --font-sm: 16px;
-        --font-md: 18px;
-        --font-lg: 18px;
-        --font-xl: 22px;
+        --font-md: 16px;
+        --font-lg: 16px;
+        --font-xl: 20px;
         --font-2xl: 32px;
         --font-3xl: 38px;
     }
@@ -196,7 +196,7 @@ body {
 
 /* ------------------------------------HERO-CSS-STARTS-------------------------------------*/
 .hero_bg {
-    background-image: url("/assets/images/png/hero_bg_img.png");
+    background-image: url("/assets/images/png/hero_bg_without_shadow.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -207,12 +207,26 @@ body {
     width: 57px;
 }
 
-.hero_slider_card_one {
-    background-image: url("/assets/images/png/hero_slider_with_text.png");
-    background-size: 100% 100%;
-    max-width: 751px;
-    height: 404px;
+.hero_slider_card {
+    max-width: 734px;
+    opacity: 0.2;
+}
+
+.hero_card_cuntant {
+    width: 696px;
+    /* width: auto; */
+}
+
+.hero_card_para {
+    max-width: 333px;
+}
+
+.hero_slider_one_img {
     border-radius: 15px;
+}
+
+.autoplay .slick-active {
+    opacity: 0.9;
 }
 
 /* ------------------------------------WHO-WE-ARE-CSS-STARTS-------------------------------------*/
@@ -228,6 +242,24 @@ body {
     background: linear-gradient(90.18deg, #0E141D 0%, #101822 100%);
     box-shadow: -24px -6px 80px #000000, 0px 2.23431px 3.35146px rgba(0, 0, 0, 0.25), 0px 10.0544px 31.2803px rgba(0, 0, 0, 0.25), inset 0px 2.23431px 3.35146px #4C6484, inset 21.2259px 11.1715px 44.6862px #192535;
     border-radius: 24.5774px;
+
+    opacity: 0.5;
+}
+
+.our_card_bg {
+    max-width: 487px;
+}
+
+.our_feature_img_bg {
+    right: -60px;
+}
+
+.vertical_slider .slick-active {
+    margin-left: 50px !important;
+    z-index: 2 !important;
+    max-width: 534px !important;
+    position: relative;
+    opacity: 0.9;
 }
 
 /* ------------------------------------FOOTER-CSS-STARTS-------------------------------------*/
@@ -366,10 +398,31 @@ a {
 /* MIDEAYUERY-START */
 @media (max-width: 1398.99px) {}
 
-@media (max-width:1198.99px) {}
+@media (max-width:1198.99px) {
+    .vertical_slider .slick-active {
+        max-width: 404px !important;
+    }
 
-@media (max-width:1023.99px) {}
+    .hero_card_cuntant {
+        width: 718px;
+    }
+}
 
-@media (max-width: 767.99px) {}
+@media (max-width:991.99px) {
+    .hero_card_cuntant {
+        width: auto;
+    }
+}
+
+@media (max-width: 767.99px) {
+    .vertical_slider .slick-active {
+        margin-left: 0px !important;
+        max-width: 514px !important;
+    }
+
+    .blue_dots_365 {
+        width: 45% !important;
+    }
+}
 
 @media (max-width:577px) {}
