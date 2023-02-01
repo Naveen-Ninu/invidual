@@ -5,7 +5,7 @@ setTimeout(function () {
   $("#preloader").fadeToggle();
   $("body").removeClass("overflow-y-hidden");
   $("body").removeClass("preloader-class");
-}, 3000);
+}, 2500);
 
 // ===============BACK-TO-TOP=================
 $(document).ready(function () {

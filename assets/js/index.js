@@ -1,5 +1,5 @@
 $(".autoplay").slick({
-  // autoplay: true,
+  autoplay: true,
   centerMode: true,
   centerPadding: "110px",
   autoplaySpeed: 2500,
@@ -42,7 +42,6 @@ $(".vertical_slider").slick({
       breakpoint: 576,
       settings: {
         centerPadding: "80px",
-        // slidesToShow: 3,
         slidesToShow: 1,
       },
     },
